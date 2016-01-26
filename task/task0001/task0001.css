@@ -1,0 +1,31 @@
+/*common style*/
+.clearfix{overflow: auto;_zoom: 1;}
+body{margin: 0;padding: 0}
+
+#head1_1{color:#00f;}
+#head2_1{font:14px oblique bold small-caps "微软雅黑";}
+.main p,pre{font:12px;color:#EDFF00;background: #000; text-indent: 2em}
+.main pre{text-transform: capitalize;word-spacing: 10px;}
+#p1{text-decoration: overline;background: #fff;color: #f00}
+#p2{text-decoration: line-through;}
+#p3{white-space: pre-line;font:24px/24px bolder italic "verdana";}
+#p4{white-space: pre-wrap;}
+#pic img{border:2px solid red;}
+#radius_box{width:500px;margin:10px auto;}
+#radius_box .top{border-bottom:3px solid #c00; border-top-color:#cc0000;  border-left:3px dotted transparent; border-right:3px dotted transparent;}
+#radius_box .center{padding:10px 20px; color:white; font-size:14px; background:#cc0000;}
+#radius_box .bot{border-top:3px solid #c00; border-top-color:#cc0000;  border-left:3px dotted transparent; border-right:3px dotted transparent;}
+
+/
+/*响应式布局*/
+.box{width: 300px;height: 180px;background: blue;margin:10px 0 0 10px;float:left;}
+.wrap{background: red;margin:20px auto;overflow: hidden;}
+@media screen and (min-width: 940px){
+    .wrap{width:940px; }
+}
+@media screen and (min-width:630px ) and (max-width: 940px){
+    .wrap{width:630px; }
+}
+@media screen and (max-width:640px ){
+    .wrap{width:310px; }
+}

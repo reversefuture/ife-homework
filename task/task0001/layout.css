@@ -1,0 +1,141 @@
+/*common style*/
+.clearfix{overflow: auto;_zoom: 1;}
+body{margin: 0;padding: 0}
+
+/*浮动实现2列布局*/
+#two_columns{width :800px ; height: 600px;margin:
+ 10px auto;background: #ddd;} 
+
+.main,.sub,.bottom {
+    height: 300px;
+    font: bolder 20px/300px '微软雅黑';
+    color: #fff;
+    text-align: center;
+}
+.main {
+    width: 100%;
+    float: left;
+}
+.main .content {
+    margin-left: 200px;
+    background-color: red;
+}
+.sub {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    background-color: green;
+}
+.bottom{background: #ff0;clear: both;height: 100px;
+	overflow: auto;zoom:1;}
+/*绝对定位实现2列布局*/
+ #two_columns_2{width :800px ; height: 600px;margin:
+ 10px auto;background: #ddd;position: relative;} 
+
+.main_2,.sub_2,.bottom_2 {
+    height: 300px;
+    font: bolder 20px/300px '微软雅黑';
+    color: #fff;
+    text-align: center;
+}
+.sub_2{width:200px; background: blue;position: absolute;
+left:0;top: 0}
+.main_2{position: absolute;right: 0;top:0;width:100%;
+background: red}
+.buttom_2{background: #ff0;position: absolute;
+	left: 0;top:300px;width: 100%;height: 100px;}
+/*浮动+margin-left负值实现3列布局*/
+#three_columns{width :800px ; height: 600px;margin:
+ 10px auto;background: #ddd}
+.middle,.left,.right {
+    height: 300px;
+    font: bolder 20px/300px '微软雅黑';
+    color: #fff;
+    text-align: center;
+}
+.middle {
+    width: 100%;
+    float: left;
+    background: black;
+}
+/*.middle .content {
+    margin: 0 300px 0 200px;
+    background-color: black;
+}*/
+.left {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    background-color: red;
+}
+.right {
+    width: 300px;
+    float: left;
+    margin-left: -300px;
+    background-color: blue;
+}
+.foot{background: #ff0;height: 80px;clear:both;}
+
+/*flex定位的三列布局*/
+#three_columns_2{width :800px ; height: 300px;margin:
+ 10px auto 0;background: #ddd}
+.oneColumn{position: relative;width: 30%;
+    height: 300px;
+    font: bolder 20px/300px '微软雅黑';
+    color: #fff;
+    text-align: center;}
+#three_columns_2 {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.left_2 {
+    background: red;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.middle_2 {
+     background: black;
+    -webkit-box-flex: 2;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 2;          /* Chrome */
+    -ms-flex: 2;              /* IE 10 */
+    flex: 2;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.right_2 {
+     background: blue;
+    -webkit-box-ordinal-group: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 1;      /* OLD - Firefox 19- */
+    -ms-flex-order: 1;              /* TWEENER - IE 10 */
+    -webkit-order: 1;               /* NEW - Chrome */
+    order: 1;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.foot_2{width:800px;background: #ff0;height: 80px;
+margin:0 auto;}
+/*浮动+定宽3列布局*/
+.container2{width:620px;height: 320px;background: #eee;
+margin:10px auto;}
+.div1,.div2,.div3{width:200px;float:left;}
+.divCss{height: 200px;color:#fff;}
+.div1{background: red;margin:10px 0 10px 0;}
+.div2{background: blue;margin:10px;}
+.div3{background: #a09;margin:10px 0 10px 0;}
+.div4{clear:both;width: 100%;background: #391;color:#fff;}
+/*响应式布局*/
+.box{width: 300px;height: 180px;background: blue;margin:10px 0 0 10px;float:left;}
+.wrap{background: red;margin:20px auto;overflow: hidden;}
+@media screen and (min-width: 940px){
+    .wrap{width:940px; }
+}
+@media screen and (min-width:630px ) and (max-width: 940px){
+    .wrap{width:630px; }
+}
+@media screen and (max-width:640px ){
+    .wrap{width:310px; }
+}

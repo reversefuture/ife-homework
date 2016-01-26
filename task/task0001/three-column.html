@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>two-column</title>
+</head>
+<style type="text/css">
+/*浮动+margin-left负值实现3列布局*/
+	.three_column{width :800px ; height: 600px;margin:
+	 10px auto;background: #ddd}
+	.middle,.left,.right {
+	    height: 300px;
+	    font: bolder 16px/16px '微软雅黑';
+	    color: #fff;
+	    text-align: center;
+	}
+	.middle {
+	    width: 100%;
+	    float: left;
+	    background: black;
+	}
+	.left {
+	    width: 200px;
+	    float: left;
+	    margin-left: -100%;
+	    background-color: red;
+	}
+	.right {
+	    width: 300px;
+	    float: left;
+	    margin-left: -300px;
+	    background-color: blue;
+	}
+	.foot{
+		background: #ff0;
+		height: 80px;
+		clear:both;
+	}
+
+	/*flex定位的三列布局*/
+	.oneColumn{
+		position: relative;
+	    height: 300px;
+	    font: bolder 16px/16px '微软雅黑';
+	    color: #fff;
+	    text-align: center;
+	}
+	.three_column_2 {
+		height: 300px;
+	  display: -webkit-flex;
+	  -webkit-flex-flow: row wrap;
+	  -webkit-align-items: stretch;
+	  display: -moz-flex;
+	  -moz-flex-flow: row wrap;
+	  -moz-align-items: stretch;
+	  display: -ms-flex;
+	  -ms-flex-flow: row wrap;
+	  -ms-align-items: stretch;
+	  display: flex;
+	  flex-flow: row wrap;
+	  align-items: stretch;
+	}
+	.left_2 {
+	    background: red;
+	     -webkit-flex: 1 0 7rem;
+	  	-moz-flex: 1 0 7rem;
+	  	-ms-flex: 1 0 7rem;
+	  	flex: 1 0 7rem;
+	  	order: 1;
+		-webkit-order: 1;
+		-moz-order: 1;
+		-ms-order: 1;
+	}
+	.middle_2 {
+	     background: black;
+	     flex: 2 0 8rem;
+		 -webkit-flex: 2 0 8rem;
+		 -moz-flex: 2 0 8rem;
+		  -ms-flex: 2 0 8rem;
+		  order: 2;
+		  -webkit-order: 2;
+		  -moz-order: 2;
+		  -ms-order: 2;
+		  
+	}
+
+	.right_2 {
+	    background: blue;
+	    -webkit-flex: 1 0 7rem;
+	  	-moz-flex: 1 0 7rem;
+	  	-ms-flex: 1 0 7rem;
+	  	flex: 1 0 7rem;
+	  	order: 3;
+		-webkit-order: 3;
+		-moz-order: 3;
+		-ms-order: 3;
+	}
+	.foot_2{
+		width: 800px;
+		margin:0 auto;
+		background: #ff0;
+	    -webkit-flex: 1 0 7rem;
+	  	-moz-flex: 1 0 7rem;
+	  	-ms-flex: 1 0 7rem;
+	  	flex: 1 0 7rem;
+	  	
+	}
+	/*浮动+定宽3列布局*/
+	.three_column_3{
+		width: 620px;
+	}
+	.middle_3,.left_3,.right_3{width:200px;float:left;}
+	.middle_3{background: red;margin:10px 0 10px 0;}
+	.left_3{background: blue;margin:10px;}
+	.right_3{background: #a09;margin:10px 0 10px 0;}
+	.foot_3{clear:both;width: 100%;background: #391;color:#fff;}
+</style>
+<body>
+	<div class="three_column">
+		<div class="middle">
+			.middle {
+	    width: 100%;
+	    float: left;
+	    background: black;
+	}
+		</div>
+		<div class="left">
+		.left {
+	    width: 200px;
+	    float: left;
+	    margin-left: -100%;
+	    background-color: red;
+	}
+		</div>
+		<div class="right">
+		.right {
+	    width: 300px;
+	    float: left;
+	    margin-left: -300px;
+	    background-color: blue;
+	}
+		</div>
+		<div class="foot">
+			.foot{
+		background: #ff0;
+		height: 80px;
+		clear:both;
+	}
+		</div>
+	</div><!--three_column end-->
+	<hr>
+	<div class="three_column three_column_2">
+		<div class="middle_2 oneColumn">
+			middle 
+		</div>
+		<div class="left_2 oneColumn">
+		left 
+		</div>
+		<div class="right_2 oneColumn">
+		right 
+		</div>
+		
+	</div><!--three_column_2 end-->
+	<div class="foot_2">
+			foot
+	</div><!--foot_2 end-->
+	<hr>
+	<div class="three_column three_column_3">
+		<div class="middle_3 oneColumn">
+			<div class="content_3">
+				middle
+			</div>
+		</div>
+		<div class="left_3 oneColumn">
+		left 
+		</div>
+		<div class="right_3 oneColumn">
+		right 
+		</div>
+		<div class="foot_3">
+			foot
+		</div><!--foot_3 end-->
+	</div><!--three_column_3 end-->
+	
+</body>
+</html>
