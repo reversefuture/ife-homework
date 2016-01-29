@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float-center</title>
+	<style type="text/css">
+/*	.outer{
+		 width:760px;   
+  		 height:400px;  
+  		 background-color:#FFCCFF;   
+	}
+	.wrap{//把浮动元素相对定位到父元素宽度50%的地方
+		height: 100px;//必须要有
+		float:left;
+		position: relative;
+		top: 50%;
+		background-color:#ff0;  
+	}
+	.center{//子元素再用一个相对定位，把那多出的自身一半的高度拉回来。
+				相对定位正是相对于自身来定位的，所以自身一半的高度只要把top或 bottom 设为50%就可以得到了
+		
+		background: #00f;
+		position: relative;
+		top: -50%;
+	}
+*/
+.outer{
+		 width:760px;   
+  		 height:400px;  
+  		 background-color:#FFCCFF;   
+	}
+.floater {
+     float: left;
+     height: 50%;
+     margin-bottom: -50px;
+     background:#ff0;
+}
+.center {
+      clear: both;
+      height: 100px;
+      position: relative;
+      background:#00f;
+}
+
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="floater">
+			floater
+		</div>
+		<div class="center">
+				center
+				
+			</div>
+	</div>
+</body>
+</html>

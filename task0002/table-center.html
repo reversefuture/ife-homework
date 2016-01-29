@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table center</title>
+	<style type="text/css">
+/*		.wrap{   
+  display:table;   
+  background-color:#FFCCFF;   
+  width:760px;   
+  height:400px;   
+  //也可以只设置subwrap的尺寸
+  overflow:hidden;   
+}   
+	.subwrap {   
+  vertical-align:middle;   
+  display:table-cell;   
+  background: red;
+}   
+*/
+	.wrap{   
+  display:table-cell;   
+  vertical-align:middle;  
+  text-align: center; 
+ *font-size:100px;//高度除以1.14
+ width: 200px;
+ height: 140px; 
+  background-color:#FFCCFF;   
+}   
+	.subwrap {   
+ vertical-align: middle;
+ zoom:1;
+ display: inline;
+ font-size: 12px;
+ width: 50px;
+ height: 50px;  
+  background: red;
+}   
+
+	/*.wrap{   
+ position: relative;
+  background-color:#FFCCFF;   
+  width:760px;   
+  height:400px;      
+}   
+	.subwrap {   
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom:0;
+  left: 0;
+  width: 200px;
+  height: 100px;  
+  background: red;
+}   */
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="subwrap">subwrap</div>
+	</div>
+</body>
+</html>
