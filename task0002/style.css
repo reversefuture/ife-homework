@@ -27,6 +27,31 @@ body {
 .clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
 .clearfix { *zoom:1; }
 
+/*index：在线Demo*/
+.main .author{
+    text-align: right;
+}
+
+ul.demo{
+    text-align: center;
+    list-style: none;
+}
+
+ul.demo li a{
+    color: #31f;
+    text-decoration: none;
+}
+
+ul.demo li a:hover{
+    text-decoration: underline;
+}
+
+.main .comment{
+    margin-top: 20px;
+    text-indent: 2em;
+    color: #e1f;
+}
+
 /*任务1：输入兴趣爱好并显示*/
 .main{
     width:980px;
