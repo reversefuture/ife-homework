@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>closure</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fn(){
+	var max=10;
+	return function bar(x) {
+	var that=this;
+	if(x>that.max){
+	console.log(x);
+	}else{
+		console.log(that.max);
+	}
+	}
+	}
+	var f1=fn(),//此时没有执行console.log(x);
+	max=100;
+f1(15)//这个时候才执行，这时候的this上下文为全局,max=100;
+	</script>
+</body>
+</html>

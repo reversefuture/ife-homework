@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输入提示框</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<h2 class="task">task0002_4 输入提示框</h2>
+		<div class="input_wrap">
+        	<input type="text" class="input_text" onkeyup="showHint(this.value, event)" onkeydown="move(event)">
+        	<div class="prompt_wrap" style="display: none;">
+	            <ul class="prompt">
+	                <li id="li0" class="choose" style="display: none;">sdsasgdasg</li>
+	                <li id="li1" class=""></li>
+	                <li id="li2"></li>
+	                <li id="li3"></li>
+	                <li id="li4"></li>
+	                <li id="li5"></li>
+	            </ul>
+        	</div>
+    	</div>
+	</div>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/task0002_4.js"></script>
+</body>
+</html>

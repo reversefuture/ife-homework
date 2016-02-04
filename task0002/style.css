@@ -1,0 +1,247 @@
+/**
+ * reset
+ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    min-width: 980px;
+    background: #e2e2e2;
+}
+/*清除浮动*/
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+
+/*任务1：输入兴趣爱好并显示*/
+.main{
+    width:980px;
+    margin:0 auto;
+    background: #fff;
+    padding:20px;
+}
+
+.main .task{
+    text-align: center;
+    font:16px/16px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #112;
+}
+
+.main .wrap{
+    border-bottom:2px solid #a19;
+    padding: 20px;
+}
+
+.main input{
+    margin:0 20px 20px 0;
+}
+.main textarea{
+    height: 100px;
+    width: 200px;
+    resize: none; 
+    margin:0 20px 20px 0;
+}
+.main #errorMSG{
+    color: #ff0000;
+    font-size: 12px
+}
+
+/*任务2：倒计时功能*/
+.content .require{
+    color:#D01717;
+    text-align: center;
+}
+
+.content{
+    width:500px;
+    margin:0 auto;
+}
+
+input.time{
+   width: 500px;
+  margin: 20px auto;
+
+}
+
+.content button{
+    letter-spacing: 10px;
+    padding:5px  0 5px 10px;
+    background: #165;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    outline: none;
+}
+
+.startTime{
+     margin:0 20px 20px 160px;
+}
+.deal p{
+    text-indent: 2em;
+    line-height: 16px;
+}
+
+.errorTime{
+    color: #f00;
+}
+
+/*任务3：轮播图*/
+#pic_wrap{
+    width:400px;
+    height: 300px;
+    margin: 20px auto ;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #000;
+}
+
+#pic{
+    list-style: none;
+    width: 2000px;
+    font-size: 0;
+    position: absolute;
+    float:left;
+}
+
+#pic li{
+    float: left;
+}
+
+#pic li img{
+    width:400px;
+    height: 300px;
+}
+
+#num{
+    position: absolute;
+    bottom:10px;
+    left:50%;
+     transform:translate(-50%,0);
+    -webkit-transform:translate(-50%,0);
+}
+
+#num li{
+    cursor: pointer;
+    float: left;
+    border: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #229;
+    margin-right: 5px;
+    text-align: center;
+    color:#fff;
+    line-height: 18px;
+
+}
+#num li.on{
+    background: #f81;
+}
+
+/*任务4：输入提示框*/
+.input_wrap{
+    width: 600px;
+    margin:0 auto;
+    position: relative;
+}
+
+.input_wrap .input_text{
+    width: 100%;
+    padding: 7px;
+    font:16px/16px 400;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #d99;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.input_wrap .input_text:hover {
+    border: 1px solid #1b1;
+}
+
+.input_wrap .input_text:focus {
+    border: 1px solid #11b;
+}
+
+.prompt_wrap{
+    width: 100%;
+    position: absolute;
+    top: 31px;
+    background: #fff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.prompt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.prompt li {
+    line-height: 22px;
+    padding: 0 10px;
+    cursor: crosshair;
+}
+.choose {
+    background: #eee;
+}
+
+/*任务5：拖拽交互*/
+h2.task0002_5 {
+	text-align: center;
+	margin: 20px 0;
+}
+.drag_container {
+    background: #aed;
+    height: 852px;
+    width:960px;
+    margin: 20px auto;
+}
+
+.drag_wrap {
+    width: 150px;
+    height: 450px;
+    background: #92C0EF;
+    margin-right: 160px;
+    float: left;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.drag {
+    width: 150px;
+    height: 40px;
+    background: #47456D;
+    border: 1px solid #000;
+    margin: -1px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    cursor: move;
+    position: absolute;
+    left: 0;
+}
+
+.dragging {
+    visibility: hidden;
+}
