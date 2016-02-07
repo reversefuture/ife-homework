@@ -1,6 +1,6 @@
 # 仓库说明
 
-我的百度前端学院联系
+我的百度前端学院作业
 
 百度前端学院详情：[https://github.com/baidu-ife/ife](https://github.com/baidu-ife/ife)
 
