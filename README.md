@@ -13,7 +13,7 @@
 
 * [任务要求](https://github.com/baidu-ife/ife/tree/master/task/task0001)
 * [在线 demo](http://reversefuture.github.io/ife-homework/task0001/blog/index.html)
-* [我的笔记-HTML, CSS基础]()
+
 
 ## task0002
 
@@ -23,4 +23,12 @@
 
 * [任务要求](https://github.com/baidu-ife/ife/tree/master/task/task0002)
 * [在线 Demo](http://reversefuture.github.io/ife-homework/task0002/index.html)
-* [我的笔记-JavaScript 基础]()
+
+## task0003
+
+知识点：原型，闭包，作用域，面向对象，设计模式等
+
+练习：个人任务管理系统
+
+* [任务要求](https://github.com/baidu-ife/ife/tree/master/task/task0003)
+* [在线 Demo](http://reversefuture.github.io/ife-homework/task0003/index.html)

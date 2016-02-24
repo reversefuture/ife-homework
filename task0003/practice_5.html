@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>p5</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function Box() {};
+Box.prototype.name = "Lee";//原型属性
+Box.prototype.age = 100;
+Box.prototype.run = function() { //原型方法
+    return this.name + this.age + '运行中...';
+};
+var box1 = new Box();
+// alert(Box.prototype.isPrototypeOf(box1)); //true
+alert(Box.isPrototypeOf(box1)); //false
+
+	</script>
+</body>
+</html>
